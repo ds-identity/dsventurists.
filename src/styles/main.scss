@@ -1841,21 +1841,21 @@ h1, h2, h3 {
     }
 }
 
-/* Category Item Styling - FORCE REFRESH */
+/* Category Item Styling - SIMPLIFIED */
 .category-item {
-    display: block !important; /* Force block layout and add important flag */
+    display: block; /* Simple block layout instead of grid */
     margin-bottom: 3rem;
     padding: 1.5rem;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     
     @media (min-width: 769px) {
-        display: grid !important;
-        grid-template-columns: 1fr 1.5fr !important;
-        gap: 3rem !important;
-        align-items: center !important;
-        padding: 2rem !important;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 3rem;
+        align-items: center;
+        padding: 2rem;
         
         &:nth-child(even) {
             grid-template-columns: 1.5fr 1fr;
@@ -1872,18 +1872,18 @@ h1, h2, h3 {
 }
 
 .category-image {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem;
     
     @media (min-width: 769px) {
-        margin-bottom: 0 !important;
+        margin-bottom: 0;
     }
     
     img {
-        width: 100% !important;
-        height: 200px !important;
-        object-fit: cover !important;
-        border-radius: 10px !important;
-        display: block !important;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
     }
 }
 
@@ -2391,5 +2391,65 @@ h1, h2, h3 {
     .cta-button:hover, .button:hover {
         background: rgba(96,  165, 250, 0.9) !important;
         color: #ffffff !important;
+    }
+}
+
+/* Theme Page Application Blocks Styling */
+.category-applications {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.app-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(59, 130, 246, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    h4 {
+        color: var(--primary-light);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+/* Mobile responsive for theme applications */
+@media (max-width: 767px) {
+    .category-applications {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .app-item {
+        padding: 1.5rem;
+        
+        h4 {
+            font-size: 1.3rem;
+        }
+        
+        p {
+            font-size: 0.95rem;
+        }
     }
 }
