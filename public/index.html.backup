@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ds Venturists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS will be injected by Webpack -->
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Mobile Top Navigation Bar -->
+    <div class="mobile-top-nav">
+        <div class="mobile-nav-brand">DS Venturists</div>
+        <div class="mobile-nav-menu">
+            <a href="#home" data-page="home" class="mobile-nav-item active" onclick="window.showPage('home'); return false;">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#categories" data-page="categories" class="mobile-nav-item" onclick="window.showPage('categories'); return false;">
+                <i class="fas fa-list"></i>
+            </a>
+            <a href="#register" data-page="register" class="mobile-nav-item" onclick="window.showPage('register'); return false;">
+                <i class="fas fa-user-plus"></i>
+            </a>
+            <a href="#team" data-page="team" class="mobile-nav-item" onclick="window.showPage('team'); return false;">
+                <i class="fas fa-users"></i>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="page-section active">
+            <div class="content-container">
+                <div class="card">
+                    <div class="hero-section">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <span class="badge-icon">🏆</span>
+                                <span>8th Annual Competition</span>
+                            </div>
+                            <h1>Welcome to <span class="gradient-text">DS Venturists</span></h1>
+                            <p class="lead">Dubai Scholars' flagship inter-school entrepreneurship competition, now proudly entering its 8th cycle.</p>
+                            
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Students Participated</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Schools Involved</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">Years Running</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-visual">
+                            <div class="hero-logo-container">
+                                <div class="logo-backdrop"></div>
+                                <img src="logo.webp" alt="DS Venturists Logo" class="hero-logo">
+                                <div class="logo-rings">
+                                    <div class="ring ring-1"></div>
+                                    <div class="ring ring-2"></div>
+                                    <div class="ring ring-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-trophy"></i>
+                            <h3>8th Annual Competition</h3>
+                            <p>Join the legacy of innovation and entrepreneurship that has inspired thousands of students.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Corporate Partnerships</h3>
+                            <p>Collaborate with leading Dubai businesses and gain invaluable industry exposure.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Multiple Categories</h3>
+                            <p>From Venturist Den to Hackathon, showcase your talents across diverse challenges.</p>
+                        </div>
+                    </div>
+
+                    <div class="why-join">
+                        <h2>Why Join DS Venturists?</h2>
+
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <h3>Expert Mentorship</h3>
+                                <p>Get guidance from industry professionals and successful entrepreneurs.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h3>Real-World Experience</h3>
+                                <p>Work on practical challenges that simulate actual business scenarios.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h3>Networking</h3>
+                                <p>Build connections with like-minded innovators and potential collaborators.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h3>Valuable Prizes</h3>
+                                <p>Win exciting rewards and recognition for your innovative ideas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-section">
+                        <h2>Ready to Begin Your Journey?</h2>
+                        <p>Join us in shaping the future of entrepreneurship.</p>
+
+                        <div class="cta-buttons">
+                            <a href="#" class="cta-button" onclick="showPage('register')">
+                                <i class="fas fa-rocket"></i>
+                                Register Now
+                            </a>
+                            <a href="#" class="cta-button" onclick="showPage('categories')">
+                                <i class="fas fa-info-circle"></i>
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Competition Categories</h1>
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="Den.jpeg" alt="Venturist Den">
+                        </div>
+                        <div class="category-content">
+                            <h2>Venturist Den</h2>
+                            <p>Participants will be presented with three Sustainable Development Goals (SDGs) from which they must select one to address through an innovative business idea. Working in teams of 2-4, they will develop and pitch their business concepts to a panel of judges, demonstrating their entrepreneurial vision, strategic thinking, and potential for making a positive impact.</p>
+                            <div class="button-container">
+                                <a href="#" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="Advert.jpeg" alt="Advertisement Category">
+                        </div>
+                        <div class="category-content">
+                            <h2>Advert</h2>
+                            <p>Teams of 2-4 participants will create captivating advertisements to promote a product or service aligned with one of the SDG goals. They will showcase their creativity, marketing acumen, and ability to engage target audiences by producing a promotional video no longer than 1 minute and 30 seconds.</p>
+                            <div class="button-container">
+                                <a href="#" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-image">
+                            <img src="Brainbrawl.png" alt="Brain Brawl Challenge">
+                        </div>
+                        <div class="category-content">
+                            <h2>Brain Brawl</h2>
+                            <p>A high-intensity challenge where teams compete in rapid-fire rounds testing their knowledge of business, economics, current affairs, and entrepreneurship. This category demands quick thinking, broad knowledge, and the ability to perform under pressure.</p>
+                            <div class="button-container">
+                                <a href="#" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="theme" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Competition Theme 2025</h1>
+                    
+                    <div class="theme-hero">
+                        <div class="theme-quote">
+                            <h2>"Redefining Business Value: Profit with Purpose."</h2>
+                            <p class="theme-subtitle">Where Financial Success Meets Meaningful Impact</p>
+                        </div>
+                    </div>
+
+                    <div class="theme-content">
+                        <div class="theme-section">
+                            <h3>The Vision</h3>
+                            <p>This year's theme challenges participants to reimagine the fundamental purpose of business in our modern world. We're moving beyond the traditional profit-first mindset to explore how organizations can create sustainable value that benefits both shareholders and society.</p>
+                        </div>
+
+                        <div class="theme-section">
+                            <h3>What This Means for Participants</h3>
+                            <div class="theme-points">
+                                <div class="theme-point">
+                                    <div class="point-icon">💡</div>
+                                    <div class="point-content">
+                                        <h4>Innovation with Impact</h4>
+                                        <p>Develop business solutions that address real-world challenges while maintaining financial viability.</p>
+                                    </div>
+                                </div>
+                                <div class="theme-point">
+                                    <div class="point-icon">🤝</div>
+                                    <div class="point-content">
+                                        <h4>Stakeholder Value</h4>
+                                        <p>Consider how your business creates value for customers, employees, communities, and the environment.</p>
+                                    </div>
+                                </div>
+                                <div class="theme-point">
+                                    <div class="point-icon">🌱</div>
+                                    <div class="point-content">
+                                        <h4>Sustainable Growth</h4>
+                                        <p>Design business models that can scale responsibly and contribute to long-term prosperity.</p>
+                                    </div>
+                                </div>
+                                <div class="theme-point">
+                                    <div class="point-icon">📊</div>
+                                    <div class="point-content">
+                                        <h4>Measurable Outcomes</h4>
+                                        <p>Demonstrate how your solution creates both financial returns and positive social/environmental impact.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-section">
+                            <h3>Key Questions to Consider</h3>
+                            <div class="theme-questions">
+                                <ul>
+                                    <li>How can your business model create shared value for all stakeholders?</li>
+                                    <li>What does "success" look like beyond traditional financial metrics?</li>
+                                    <li>How can technology and innovation drive both profit and purpose?</li>
+                                    <li>What role does your business play in addressing global challenges?</li>
+                                    <li>How do you measure and communicate your impact to stakeholders?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="theme-section">
+                            <h3>Application Across Categories</h3>
+                            <div class="category-applications">
+                                <div class="app-item">
+                                    <h4>Venturist Den</h4>
+                                    <p>Pitch business ideas that align with SDGs while demonstrating clear paths to profitability and sustainable growth.</p>
+                                </div>
+                                <div class="app-item">
+                                    <h4>Advertisement</h4>
+                                    <p>Create campaigns that communicate how brands can authentically connect purpose with profit in their messaging.</p>
+                                </div>
+                                <div class="app-item">
+                                    <h4>Brain Brawl</h4>
+                                    <p>Demonstrate knowledge of businesses that have successfully balanced financial success with meaningful social impact.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-cta">
+                            <h3>Ready to Redefine Business Value?</h3>
+                            <p>Join us in exploring how the next generation of entrepreneurs can build businesses that profit with purpose.</p>
+                            <div class="cta-buttons">
+                                <a href="#" class="cta-button" onclick="showPage('categories')">
+                                    <i class="fas fa-compass"></i>
+                                    Explore Categories
+                                </a>
+                                <a href="#" class="cta-button" onclick="showPage('register')">
+                                    <i class="fas fa-rocket"></i>
+                                    Register Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="judges-sponsors" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Judges & Sponsors</h1>
+                    
+                    <div class="js-intro">
+                        <p class="lead">DS Venturists is proudly supported by industry leaders and evaluated by experienced professionals who bring diverse expertise to our competition.</p>
+                    </div>
+
+                    <!-- Sponsors Section -->
+                    <div class="sponsors-section">
+                        <h2>Our Sponsors</h2>
+                        <p>We're grateful for the support of organizations that share our vision of fostering entrepreneurial talent among young minds.</p>
+                        
+                        <div class="sponsor-tiers">
+                            <div class="sponsor-tier">
+                                <h3>Title Sponsors</h3>
+                                <div class="sponsors-grid">
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Sponsor Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Title Sponsor Name</h4>
+                                            <p>Leading organization supporting entrepreneurship education and youth development. Partnership details to be announced.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sponsor-tier">
+                                <h3>Category Sponsors</h3>
+                                <div class="sponsors-grid">
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Sponsor Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Venturist Den Sponsor</h4>
+                                            <p>Supporting innovation and sustainable business development. More details coming soon.</p>
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Sponsor Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Advertisement Sponsor</h4>
+                                            <p>Empowering creative communications and brand innovation. Information to be shared soon.</p>
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Sponsor Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Brain Brawl Sponsor</h4>
+                                            <p>Supporting business education and knowledge sharing. Details coming soon.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sponsor-tier">
+                                <h3>Supporting Partners</h3>
+                                <div class="sponsors-grid">
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Partner Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Supporting Partner</h4>
+                                            <p>Valued partner in our mission to develop entrepreneurial talent. More information to follow.</p>
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-card placeholder">
+                                        <div class="sponsor-logo">
+                                            <img src="logo.webp" alt="Partner Logo">
+                                        </div>
+                                        <div class="sponsor-info">
+                                            <h4>Supporting Partner</h4>
+                                            <p>Contributing to the growth and success of young entrepreneurs. Details to be announced.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sponsor-cta">
+                            <h3>Interested in Sponsoring?</h3>
+                            <p>Join us in supporting the next generation of entrepreneurs and innovators.</p>
+                            <a href="#" class="cta-button">
+                                <i class="fas fa-handshake"></i>
+                                Partnership Opportunities
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Judges Section -->
+                    <div class="judges-section">
+                        <h2>Meet Our Judges</h2>
+                        <p>Our panel of distinguished judges brings together expertise from entrepreneurship, business development, technology, and social impact.</p>
+                        
+                        <div class="judges-categories">
+                            <div class="judge-category">
+                                <h3>Venturist Den Judges</h3>
+                                <div class="judges-grid">
+                                    <div class="judge-card placeholder">
+                                        <div class="judge-image">
+                                            <img src="logo.webp" alt="Judge Placeholder">
+                                        </div>
+                                        <div class="judge-info">
+                                            <h4>Judge Name</h4>
+                                            <p class="judge-title">Senior Entrepreneur & Investor</p>
+                                            <p class="judge-bio">Experienced business leader with expertise in sustainable ventures and impact investing. Details to be announced.</p>
+                                        </div>
+                                    </div>
+                                    <div class="judge-card placeholder">
+                                        <div class="judge-image">
+                                            <img src="logo.webp" alt="Judge Placeholder">
+                                        </div>
+                                        <div class="judge-info">
+                                            <h4>Judge Name</h4>
+                                            <p class="judge-title">Technology & Innovation Expert</p>
+                                            <p class="judge-bio">Technology leader focused on sustainable innovation and digital transformation. More information coming soon.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="judge-category">
+                                <h3>Advertisement Category Judges</h3>
+                                <div class="judges-grid">
+                                    <div class="judge-card placeholder">
+                                        <div class="judge-image">
+                                            <img src="logo.webp" alt="Judge Placeholder">
+                                        </div>
+                                        <div class="judge-info">
+                                            <h4>Judge Name</h4>
+                                            <p class="judge-title">Creative Director & Brand Strategist</p>
+                                            <p class="judge-bio">Award-winning creative professional specializing in purpose-driven brand communications. Profile coming soon.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="judge-category">
+                                <h3>Brain Brawl Judges</h3>
+                                <div class="judges-grid">
+                                    <div class="judge-card placeholder">
+                                        <div class="judge-image">
+                                            <img src="logo.webp" alt="Judge Placeholder">
+                                        </div>
+                                        <div class="judge-info">
+                                            <h4>Judge Name</h4>
+                                            <p class="judge-title">Business Knowledge Expert</p>
+                                            <p class="judge-bio">Industry expert with deep knowledge of global business trends and entrepreneurship. Details to be shared soon.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Registration Information</h1>
+                    
+                    <div class="eligibility-section">
+                        <h2>Eligibility Criteria</h2>
+                        <div class="criteria-list">
+                            <div class="criteria-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <h3>Grade Requirements</h3>
+                                <p>Must be enrolled in Years 9-13 (Grades 8-12)</p>
+                            </div>
+                            <div class="criteria-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Location</h3>
+                                <p>Must be a student in the UAE</p>
+                            </div>
+                            <div class="criteria-item">
+                                <i class="fas fa-users"></i>
+                                <h3>Team Formation</h3>
+                                <p>Teams must consist of 2-4 members</p>
+                            </div>
+                            <div class="criteria-item">
+                                <i class="fas fa-clock"></i>
+                                <h3>Time Commitment</h3>
+                                <p>Must be available for all competition dates</p>
+                            </div>
+                        </div>
+
+                        <div class="important-notes">
+                            <h2>Important Information</h2>
+                            <ul>
+                                <li><i class="fas fa-exclamation-circle"></i> All team members must be from the same school</li>
+                                <li><i class="fas fa-exclamation-circle"></i> Each team must have a designated teacher supervisor</li>
+                                <li><i class="fas fa-exclamation-circle"></i> Registration deadline: [Date to be added]</li>
+                                <li><i class="fas fa-exclamation-circle"></i> Limited spots available - register early!</li>
+                            </ul>
+                        </div>
+
+                        <div class="registration-options">
+                            <h2>Choose Your Registration Path</h2>
+                            <div class="registration-buttons">
+                                <a href="#" class="register-button ds-button">
+                                    <i class="fas fa-school"></i>
+                                    <span>
+                                        <strong>Dubai Scholars Students</strong>
+                                        <small>For current DS students</small>
+                                    </span>
+                                </a>
+                                <a href="#" class="register-button external-button">
+                                    <i class="fas fa-globe-asia"></i>
+                                    <span>
+                                        <strong>External School Students</strong>
+                                        <small>For students from other UAE schools</small>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Meet the Team</h1>
+                    <div class="team-grid">
+                        <div class="team-member president" onclick="toggleTeamHierarchy('president')">
+                            <div class="member-image">
+                                <img src="reyaansh.png" alt="Reyaansh Dugad">
+                            </div>
+                            <h3>Reyaansh Dugad</h3>
+                            <p class="role">President</p>
+                            <div class="member-line"></div>
+                            <div class="leader-bio">
+                                <p>"Leadership is not about being in charge. It's about taking care of those in your charge." As the President of DS Venturists, I am committed to fostering innovation and entrepreneurship among young minds.</p>
+                                <p>Vision: To transform DS Venturists into a global platform for young entrepreneurs.</p>
+                            </div>
+                        </div>
+
+                        <div class="team-members">
+                            <div class="team-member leader" onclick="toggleTeamHierarchy('tech')">
+                                <div class="member-image">
+                                    <img src="mahin.jpeg" alt="Mahin Kashyap">
+                                </div>
+                                <h3>Mahin Kashyap</h3>
+                                <p class="role">Chief Tech Strategist</p>
+                                <div class="member-line"></div>
+                            </div>
+
+                            <div class="team-member leader" onclick="toggleTeamHierarchy('pr')">
+                                <div class="member-image">
+                                    <img src="samara.png" alt="Samara Deshnoor">
+                                </div>
+                                <h3>Samara Deshnoor</h3>
+                                <p class="role">Head of PR</p>
+                                <div class="member-line"></div>
+                            </div>
+
+                            <div class="team-member leader" onclick="toggleTeamHierarchy('category')">
+                                <div class="member-image">
+                                    <img src="tanish.jpeg" alt="Tanisha Khanna">
+                                </div>
+                                <h3>Tanisha Khanna</h3>
+                                <p class="role">Mastermind Innovation</p>
+                                <div class="member-line"></div>
+                            </div>
+
+                            <div class="team-member leader" onclick="toggleTeamHierarchy('logistics')">
+                                <div class="member-image">
+                                    <img src="vishaka.jpeg" alt="Vishaka Nankani">
+                                </div>
+                                <h3>Vishaka Nankani</h3>
+                                <p class="role">Head of Logistics</p>
+                                <div class="member-line"></div>
+                            </div>
+
+                            <div class="team-member leader" onclick="toggleTeamHierarchy('marketing')">
+                                <div class="member-image">
+                                    <img src="hardik.png" alt="Hardik Kumar">
+                                </div>
+                                <h3>Hardik Kumar</h3>
+                                <p class="role">Head of Marketing</p>
+                                <div class="member-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="page-section">
+            <div class="content-container">
+                <div class="card">
+                    <h1>Media Gallery</h1>
+                    
+                    <div class="media-hero">
+                        <div class="instagram-cta">
+                            <div class="instagram-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <h2>Follow Our Journey</h2>
+                            <p>See more behind-the-scenes moments and updates</p>
+                            <a href="#" class="instagram-link" id="instagramLink">
+                                <i class="fab fa-instagram"></i>
+                                <span>@dsventurists</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bounce Cards Feature -->
+                    <div class="bounce-cards-section">
+                        <h2 style="text-align: center; color: var(--primary-light); margin-bottom: 2rem;">
+                            Featured Moments
+                        </h2>
+                        <div class="bounce-cards-container" id="bounceCardsContainer">
+                            <!-- Cards will be dynamically generated -->
+                        </div>
+                    </div>
+
+                    <div class="media-gallery">
+                        <!-- Parallax Scroll Section -->
+                        <div style="margin-bottom: 4rem;">
+                            <h2 class="section-subtitle" style="text-align: center; margin-bottom: 3rem;">
+                                Explore Our Journey
+                            </h2>
+                            <div id="parallaxContainer">
+                                <!-- Parallax scroll will be dynamically generated -->
+                            </div>
+                        </div>
+                        
+                        <!-- Traditional Gallery Grid -->
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="DSV 2023-275.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-336.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-341.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-359.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-365.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-367.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-369 (1).jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-369.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV 2023-388.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV-100.png" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV-101.png" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="DSV-102.png" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv1.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv2.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv3.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv4.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv5.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv7.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv29.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv39.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv49.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="dsv58.jpg" alt="DS Venturists Event" loading="lazy">
+                                <div class="gallery-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lightbox Modal -->
+                    <div class="lightbox" id="lightbox">
+                        <div class="lightbox-content">
+                            <span class="lightbox-close" id="lightboxClose">&times;</span>
+                            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+                            <div class="lightbox-nav">
+                                <button class="lightbox-prev" id="lightboxPrev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="lightbox-next" id="lightboxNext">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Desktop Floating Dock (only one instance) -->
+    <div class="floating-dock" id="floatingDock">
+        <a href="#home" class="dock-item active" onclick="showPage('home')" data-page="home">
+            <i class="fas fa-home"></i>
+            <div class="dock-tooltip">Home</div>
+        </a>
+        <a href="#theme" class="dock-item" onclick="showPage('theme')" data-page="theme">
+            <i class="fas fa-lightbulb"></i>
+            <div class="dock-tooltip">Theme</div>
+        </a>
+        <a href="#categories" class="dock-item" onclick="showPage('categories')" data-page="categories">
+            <i class="fas fa-list"></i>
+            <div class="dock-tooltip">Categories</div>
+        </a>
+        <a href="#home" class="dock-item dock-logo-item" onclick="showPage('home')" data-page="home">
+            <img src="logo.webp" alt="DS Venturists" class="dock-logo">
+            <div class="dock-tooltip">DS Venturists</div>
+        </a>
+        <a href="#media" class="dock-item" onclick="showPage('media')" data-page="media">
+            <i class="fas fa-images"></i>
+            <div class="dock-tooltip">Media</div>
+        </a>
+        <a href="#judges-sponsors" class="dock-item" onclick="showPage('judges-sponsors')" data-page="judges-sponsors">
+            <i class="fas fa-award"></i>
+            <div class="dock-tooltip">Judges & Sponsors</div>
+        </a>
+        <a href="#register" class="dock-item" onclick="showPage('register')" data-page="register">
+            <i class="fas fa-user-plus"></i>
+            <div class="dock-tooltip">Register</div>
+        </a>
+        <a href="#team" class="dock-item" onclick="showPage('team')" data-page="team">
+            <i class="fas fa-users"></i>
+            <div class="dock-tooltip">Team</div>
+        </a>
+    </div>
+
+    <!-- Mobile Floating Dock (only one instance) -->
+    <div class="floating-dock-mobile">
+        <div class="dock-menu" id="dockMenu">
+            <a href="#home" class="dock-item" data-page="home" onclick="window.showPage('home'); return false;">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#theme" class="dock-item" data-page="theme" onclick="window.showPage('theme'); return false;">
+                <i class="fas fa-lightbulb"></i>
+                <span>Theme</span>
+            </a>
+            <a href="#categories" class="dock-item" data-page="categories" onclick="window.showPage('categories'); return false;">
+                <i class="fas fa-list"></i>
+                <span>Categories</span>
+            </a>
+            <a href="#media" class="dock-item" data-page="media" onclick="window.showPage('media'); return false;">
+                <i class="fas fa-images"></i>
+                <span>Media</span>
+            </a>
+            <a href="#judges-sponsors" class="dock-item" data-page="judges-sponsors" onclick="window.showPage('judges-sponsors'); return false;">
+                <i class="fas fa-award"></i>
+                <span>Judges & Sponsors</span>
+            </a>
+            <a href="#register" class="dock-item" data-page="register" onclick="window.showPage('register'); return false;">
+                <i class="fas fa-user-plus"></i>
+                <span>Register</span>
+            </a>
+            <a href="#team" class="dock-item" data-page="team" onclick="window.showPage('team'); return false;">
+                <i class="fas fa-users"></i>
+                <span>Team</span>
+            </a>
+        </div>
+        <button class="dock-toggle" id="dockToggle">
+            <i class="fas fa-bars" id="dockToggleIcon"></i>
+        </button>
+    </div>
+
+    <!-- EMERGENCY FIXES -->
+    <style>
+        /* OVERRIDE ALL HIDING CSS */
+        main { 
+            display: block !important; 
+            visibility: visible !important; 
+            opacity: 1 !important;
+        }
+        
+        /* PROPER PAGE SECTION BEHAVIOR */
+        .page-section { 
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            top: -9999px !important;
+            z-index: -999 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+        
+        .page-section.force-active { 
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            z-index: auto !important;
+            height: auto !important;
+            overflow: visible !important;
+            transform: none !important;
+        }
+        
+        /* Ensure content is visible */
+        .force-active .content-container,
+        .force-active .card,
+        .force-active * {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        /* PRECISE LOGO QUALITY FIX - ONLY IMAGES */
+        img.hero-logo, img.dock-logo, .sponsor-logo img, 
+        img[src*="logo.webp"], img[src*="logo.png"], img[src*="logo.jpg"], img[src*="logo.jpeg"],
+        img[alt*="Logo"], img[alt*="logo"][src],
+        .hero-logo-container img[src], .logo-backdrop + img[src] {
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: high-quality !important;
+            image-rendering: -webkit-high-quality !important;
+            image-rendering: pixelated !important;
+            -ms-interpolation-mode: nearest-neighbor !important;
+            backface-visibility: hidden !important;
+            -webkit-backface-visibility: hidden !important;
+            transform: translateZ(0) scale(1.001) !important;
+            -webkit-transform: translateZ(0) scale(1.001) !important;
+            will-change: transform !important;
+            filter: contrast(1.3) brightness(1.15) saturate(1.2) sharpness(1.5) !important;
+            -webkit-filter: contrast(1.3) brightness(1.15) saturate(1.2) !important;
+            max-width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            image-orientation: from-image !important;
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            user-select: none !important;
+            pointer-events: none !important;
+            -webkit-touch-callout: none !important;
+        }
+        
+        /* SPECIFIC HERO LOGO ULTRA FIX */
+        img.hero-logo {
+            width: auto !important;
+            max-width: 300px !important;
+            min-width: 200px !important;
+            filter: contrast(1.4) brightness(1.2) saturate(1.3) drop-shadow(0 0 1px rgba(255,255,255,0.5)) !important;
+        }
+        
+        /* SPONSOR LOGOS ULTRA FIX */
+        .sponsor-logo img {
+            filter: contrast(1.3) brightness(1.1) saturate(1.2) drop-shadow(0 0 1px rgba(255,255,255,0.3)) !important;
+        }
+        
+        /* RESTORE PROPER TEXT RENDERING */
+        body, *, *::before, *::after {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* ENSURE LATO FONT RENDERS PROPERLY */
+        .hero-content h1, .hero-content p, 
+        .floating-dock *, .dock-item *,
+        h1, h2, h3, h4, h5, h6, p, span, div {
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+            text-rendering: optimizeLegibility !important;
+            font-feature-settings: "liga", "kern" !important;
+        }
+        
+        /* MEDIA PAGE NUCLEAR FIX */
+        #media.force-active {
+            background: #1a1a2e !important;
+            color: white !important;
+            min-height: 100vh !important;
+        }
+        
+        #media .content-container {
+            background: rgba(59, 130, 246, 0.2) !important;
+            border: 2px solid rgba(59, 130, 246, 0.5) !important;
+            border-radius: 1rem !important;
+            padding: 2rem !important;
+            margin: 1rem !important;
+        }
+        
+        #media h1 {
+            color: #3b82f6 !important;
+            font-size: 3rem !important;
+            text-align: center !important;
+            margin-bottom: 2rem !important;
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5) !important;
+        }
+        
+        #media .media-hero {
+            background: linear-gradient(135deg, #E1306C 0%, #F56040 25%, #F77737 50%, #FCAF45 75%, #FFDC80 100%) !important;
+            border-radius: 1rem !important;
+            padding: 3rem !important;
+            margin: 2rem 0 !important;
+            text-align: center !important;
+            display: block !important;
+        }
+        
+        #media .instagram-cta h2 {
+            color: white !important;
+            font-size: 2rem !important;
+            margin: 1rem 0 !important;
+        }
+        
+        #media .instagram-cta p {
+            color: white !important;
+            font-size: 1.2rem !important;
+        }
+        
+        #media .bounce-cards-section {
+            background: rgba(147, 51, 234, 0.2) !important;
+            border: 2px solid rgba(147, 51, 234, 0.5) !important;
+            border-radius: 1rem !important;
+            padding: 2rem !important;
+            margin: 2rem 0 !important;
+            display: block !important;
+        }
+        
+        #media .media-gallery {
+            background: rgba(34, 197, 94, 0.2) !important;
+            border: 2px solid rgba(34, 197, 94, 0.5) !important;
+            border-radius: 1rem !important;
+            padding: 2rem !important;
+            margin: 2rem 0 !important;
+            display: block !important;
+        }
+        
+        #media .gallery-grid {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+            gap: 1rem !important;
+            margin: 1rem 0 !important;
+        }
+        
+        #media .gallery-item {
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            border-radius: 0.5rem !important;
+            padding: 1rem !important;
+            height: 150px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: white !important;
+        }
+        
+        #media .gallery-item img {
+            max-width: 100% !important;
+            max-height: 100% !important;
+            object-fit: cover !important;
+            border-radius: 0.5rem !important;
+        }
+        
+        /* DEBUG: Fix media page visibility issues */
+        #media.force-active {
+            background: var(--bg-primary, #1a1a2e) !important;
+            min-height: 100vh !important;
+            padding: 2rem !important;
+        }
+        
+        #media .content-container {
+            background: rgba(255, 255, 255, 0.05) !important;
+            border-radius: 1rem !important;
+            padding: 2rem !important;
+            color: white !important;
+        }
+        
+        #media h1, #media h2, #media p {
+            color: white !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+            padding: 0.5rem !important;
+            border-radius: 0.5rem !important;
+        }
+        
+        /* Force all media elements to be visible */
+        #media .media-hero,
+        #media .bounce-cards-section,
+        #media .media-gallery,
+        #media .gallery-grid,
+        #media .gallery-item {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            background: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            margin: 1rem 0 !important;
+            padding: 1rem !important;
+        }
+        
+        #media .instagram-cta {
+            background: linear-gradient(135deg, #E1306C 0%, #F56040 25%, #F77737 50%, #FCAF45 75%, #FFDC80 100%) !important;
+            padding: 2rem !important;
+            border-radius: 1rem !important;
+            color: white !important;
+        }
+    </style>
+    <script>
+        // Clean navigation system
+        (function() {
+            'use strict';
+            
+            function showPage(pageId) {
+                console.log('Showing page:', pageId);
+                
+                try {
+                    // Hide all sections
+                    const allSections = document.querySelectorAll('.page-section');
+                    allSections.forEach(section => {
+                        section.classList.remove('active', 'force-active');
+                    });
+                    
+                    // Show target section
+                    const target = document.getElementById(pageId);
+                    if (target) {
+                        target.classList.add('force-active');
+                        console.log('Successfully showing:', pageId);
+                    } else {
+                        console.error('Page not found:', pageId);
+                        // Fallback to home
+                        const home = document.getElementById('home');
+                        if (home) {
+                            home.classList.add('force-active');
+                        }
+                    }
+                    
+                    // Update navigation states  
+                    document.querySelectorAll('.dock-item, .mobile-nav-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.querySelectorAll(`[data-page="${pageId}"]`).forEach(item => {
+                        item.classList.add('active');
+                    });
+                    
+                    // Close mobile menu
+                    const menu = document.getElementById('dockMenu');
+                    if (menu && menu.classList.contains('active')) {
+                        menu.classList.remove('active');
+                        const icon = document.getElementById('dockToggleIcon');
+                        if (icon) icon.className = 'fas fa-bars';
+                    }
+                    
+                } catch (error) {
+                    console.error('Navigation error:', error);
+                }
+                
+                return false;
+            }
+            
+            // Expose globally
+            window.showPage = showPage;
+            
+            // Initialize navigation
+            function initializeNavigation() {
+                console.log('Initializing navigation...');
+                showPage('home');
+            }
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initializeNavigation);
+            } else {
+                initializeNavigation();
+            }
+            
+            window.addEventListener('load', () => {
+                setTimeout(initializeNavigation, 100);
+            });
+            
+        })();
+        
+        // EMERGENCY FIXES FOR MEDIA PAGE AND LOGO
+        (function() {
+            'use strict';
+            
+            // Force the media page to display with emergency fixes
+            function emergencyMediaFix() {
+                const mediaPage = document.getElementById('media');
+                if (mediaPage) {
+                    mediaPage.classList.add('force-active');
+                    mediaPage.style.display = 'block';
+                    mediaPage.style.opacity = '1';
+                    mediaPage.style.visibility = 'visible';
+                    
+                    // Force all children to be visible
+                    const allElements = mediaPage.querySelectorAll('*');
+                    allElements.forEach(el => {
+                        if (getComputedStyle(el).display === 'none') {
+                            el.style.display = 'block';
+                        }
+                        el.style.opacity = '1';
+                        el.style.visibility = 'visible';
+                    });
+                    
+                    console.log('Emergency media fix applied!');
+                }
+            }
+            
+            // PRECISE LOGO QUALITY FIX - ONLY ACTUAL LOGO IMAGES
+            function emergencyLogoFix() {
+                // More precise selectors to avoid affecting text
+                const logoSelectors = [
+                    'img.hero-logo',
+                    'img.dock-logo', 
+                    '.sponsor-logo img',
+                    'img[src*="logo.webp"]',
+                    'img[src*="logo.jpg"]',
+                    'img[src*="logo.jpg"]',
+                    'img[src*="logo.jpeg"]',
+                    'img[alt*="Logo"][src]',
+                    'img[alt*="logo"][src]',
+                    '.hero-logo-container img[src]',
+                    '.logo-backdrop + img[src]'
+                ];
+                
+                let totalLogos = 0;
+                
+                logoSelectors.forEach(selector => {
+                    const logos = document.querySelectorAll(selector);
+                    logos.forEach(logo => {
+                        // Only apply to actual IMG elements
+                        if (logo.tagName === 'IMG') {
+                            // Apply ALL the fixes
+                            logo.style.imageRendering = 'crisp-edges';
+                            logo.style.msInterpolationMode = 'nearest-neighbor';
+                            logo.style.filter = 'contrast(1.4) brightness(1.2) saturate(1.3) drop-shadow(0 0 1px rgba(255,255,255,0.5))';
+                            logo.style.webkitFilter = 'contrast(1.4) brightness(1.2) saturate(1.3)';
+                            logo.style.transform = 'translateZ(0) scale(1.001)';
+                            logo.style.webkitTransform = 'translateZ(0) scale(1.001)';
+                            logo.style.backfaceVisibility = 'hidden';
+                            logo.style.webkitBackfaceVisibility = 'hidden';
+                            logo.style.willChange = 'transform';
+                            logo.style.objectFit = 'contain';
+                            logo.style.objectPosition = 'center';
+                            logo.style.imageOrientation = 'from-image';
+                            logo.style.webkitUserSelect = 'none';
+                            logo.style.mozUserSelect = 'none';
+                            logo.style.userSelect = 'none';
+                            logo.style.pointerEvents = 'none';
+                            logo.style.webkitTouchCallout = 'none';
+                            
+                            // Force reload the image to apply fixes
+                            const src = logo.src;
+                            logo.src = '';
+                            logo.src = src;
+                            
+                            totalLogos++;
+                        }
+                    });
+                });
+                
+                console.log(`🚀 PRECISE LOGO FIX applied to ${totalLogos} logo images!`);
+                return totalLogos;
+            }
+            
+            // Apply fixes immediately and on navigation
+            document.addEventListener('DOMContentLoaded', () => {
+                emergencyLogoFix();
+                if (window.location.hash === '#media') {
+                    emergencyMediaFix();
+                }
+            });
+            
+            window.addEventListener('hashchange', () => {
+                if (window.location.hash === '#media') {
+                    setTimeout(emergencyMediaFix, 100);
+                }
+                emergencyLogoFix();
+            });
+            
+            // Override the showPage function to include emergency fixes
+            const originalShowPage = window.showPage;
+            window.showPage = function(pageId) {
+                const result = originalShowPage ? originalShowPage(pageId) : false;
+                
+                if (pageId === 'media') {
+                    setTimeout(emergencyMediaFix, 50);
+                }
+                emergencyLogoFix();
+                
+                return result;
+            };
+            
+            // Force fixes every 2 seconds for critical issues
+            setInterval(() => {
+                emergencyLogoFix();
+                if (window.location.hash === '#media' || document.querySelector('#media.force-active')) {
+                    emergencyMediaFix();
+                }
+            }, 2000);
+            
+            // IMMEDIATE LOGO FIX ON LOAD
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => {
+                    console.log('🔥 IMMEDIATE LOGO FIX ON DOM READY');
+                    emergencyLogoFix();
+                });
+            } else {
+                console.log('🔥 IMMEDIATE LOGO FIX NOW');
+                emergencyLogoFix();
+            }
+            
+            // Additional immediate fix after a brief delay
+            setTimeout(() => {
+                console.log('🔥 DELAYED IMMEDIATE LOGO FIX');
+                emergencyLogoFix();
+            }, 100);
+            
+            setTimeout(() => {
+                console.log('🔥 SECOND DELAYED LOGO FIX');
+                emergencyLogoFix();
+            }, 500);
+            
+            setTimeout(() => {
+                console.log('🔥 THIRD DELAYED LOGO FIX');
+                emergencyLogoFix();
+            }, 1000);
+            
+        })();
+    </script>
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- JavaScript will be injected by Webpack -->
+</body>
+</html>

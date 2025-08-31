@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Venturists - Data Science Competition</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="page-section active">
+            <div class="hero-section">
+                <div class="hero-background"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="hero-text">
+                            <div class="hero-logo-container">
+                                <div class="logo-backdrop"></div>
+                                <img src="logo.webp" alt="DS Venturists Logo" class="hero-logo">
+                                <div class="logo-rings">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                </div>
+                            </div>
+                            <div class="hero-trophy">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h1 class="hero-title">8th Annual Competition</h1>
+                            <p class="hero-subtitle">Join the most prestigious data science competition. Compete, learn, and network with industry experts.</p>
+                            <div class="hero-cta">
+                                <a href="#events" class="cta-button primary" onclick="showPage('events')">
+                                    <span>Join Competition</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#team" class="cta-button secondary" onclick="showPage('team')">
+                                    <span>Meet the Team</span>
+                                    <i class="fas fa-users"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h1>About DS Venturists</h1>
+                <p>DS Venturists is a premier data science organization dedicated to fostering innovation and excellence in the field of data science.</p>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="page-section">
+            <div class="container">
+                <h1>Events & Competitions</h1>
+                <p>Participate in our exciting data science competitions and events.</p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="page-section">
+            <div class="container">
+                <h1>Our Team</h1>
+                <p>Meet the amazing team behind DS Venturists.</p>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="page-section">
+            <div class="container">
+                <h1>Media Gallery</h1>
+                <div class="media-hero">
+                    <div class="instagram-cta">
+                        <h2>Follow us on Instagram</h2>
+                        <p>Stay updated with our latest posts and activities</p>
+                        <a href="https://instagram.com/dsventurists" target="_blank" class="instagram-button">
+                            <i class="fab fa-instagram"></i>
+                            Follow @dsventurists
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="media-gallery">
+                    <h3>Photo Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="DSV 2023-275.jpg" alt="Event Photo">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="DSV 2023-359.jpg" alt="Event Photo">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="DSV 2023-388.jpg" alt="Event Photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Dock Navigation -->
+    <div class="floating-dock" id="floatingDock">
+        <div class="dock-menu" id="dockMenu">
+            <a href="#home" class="dock-item active" data-page="home" onclick="showPage('home')">
+                <i class="fas fa-home"></i>
+                <span class="dock-tooltip">Home</span>
+            </a>
+            <a href="#about" class="dock-item" data-page="about" onclick="showPage('about')">
+                <i class="fas fa-lightbulb"></i>
+                <span class="dock-tooltip">About</span>
+            </a>
+            <a href="#events" class="dock-item" data-page="events" onclick="showPage('events')">
+                <i class="fas fa-list"></i>
+                <span class="dock-tooltip">Events</span>
+            </a>
+            <a href="#events" class="dock-item dock-logo-item" data-page="events" onclick="showPage('events')">
+                <img src="logo.webp" alt="DS Venturists" class="dock-logo">
+                <span class="dock-tooltip">Competition</span>
+            </a>
+            <a href="#media" class="dock-item" data-page="media" onclick="showPage('media')">
+                <i class="fas fa-images"></i>
+                <span class="dock-tooltip">Media</span>
+            </a>
+            <a href="#team" class="dock-item" data-page="team" onclick="showPage('team')">
+                <i class="fas fa-trophy"></i>
+                <span class="dock-tooltip">Team</span>
+            </a>
+            <a href="#team" class="dock-item" data-page="team" onclick="showPage('team')">
+                <i class="fas fa-user-plus"></i>
+                <span class="dock-tooltip">Join Us</span>
+            </a>
+            <a href="#team" class="dock-item" data-page="team" onclick="showPage('team')">
+                <i class="fas fa-users"></i>
+                <span class="dock-tooltip">Members</span>
+            </a>
+        </div>
+        <button class="dock-toggle" id="dockToggle">
+            <i class="fas fa-bars" id="dockToggleIcon"></i>
+        </button>
+    </div>
+
+    <script>
+        // Clean, simple navigation system
+        function showPage(pageId) {
+            console.log('Navigating to:', pageId);
+            
+            // Hide all pages
+            document.querySelectorAll('.page-section').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show target page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                
+                // Update navigation states
+                document.querySelectorAll('.dock-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                document.querySelectorAll(`[data-page="${pageId}"]`).forEach(item => {
+                    item.classList.add('active');
+                });
+                
+                console.log('Successfully navigated to:', pageId);
+            } else {
+                console.error('Page not found:', pageId);
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('home');
+            console.log('Clean navigation initialized');
+        });
+    </script>
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- JavaScript will be injected by Webpack -->
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Navigation</title>
+    <style>
+        .page-section { display: none; padding: 20px; }
+        .page-section.active { display: block; }
+        .nav-button { padding: 10px; margin: 5px; background: blue; color: white; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="nav-button" onclick="showPage('home')">Home</div>
+        <div class="nav-button" onclick="showPage('about')">About</div>
+    </div>
+    
+    <div id="home" class="page-section active">
+        <h1>Home Page</h1>
+        <p>This is the home page content.</p>
+    </div>
+    
+    <div id="about" class="page-section">
+        <h1>About Page</h1>
+        <p>This is the about page content.</p>
+    </div>
+    
+    <script>
+        function showPage(pageId) {
+            console.log('Showing page:', pageId);
+            
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show target page
+            const target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+                console.log('Page shown successfully');
+            } else {
+                console.error('Page not found:', pageId);
+            }
+        }
+    </script>
+</body>
+</html>
