@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -77,6 +78,17 @@ module.exports = (env, argv) => {
           minifyCSS: true,
           minifyURLs: true
         } : false
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'public',
+            to: '',
+            globOptions: {
+              ignore: ['**/index.html', '**/favicon.ico']
+            }
+          }
+        ]
       }),
       ...(isProduction ? [
         new MiniCssExtractPlugin({
