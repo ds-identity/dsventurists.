@@ -2288,16 +2288,37 @@ h1, h2, h3 {
         gap: 1.2rem !important;
         padding: 1rem 0 !important;
         margin: 0 !important;
+        justify-content: flex-start !important; /* Override inline style */
     }
     
-    /* Ensure bottom row has same spacing */
-    .team-members[style*="justify-content: center"] {
+    /* Ensure bottom row has same spacing - override inline styles */
+    .team-members[style*="justify-content: center"],
+    .team-members[style*="justify-content:center"] {
         gap: 1.2rem !important;
         margin-top: 0 !important;
+        padding-top: 0 !important; /* Remove any extra top padding */
+        justify-content: flex-start !important; /* Override inline style */
     }
     
     .team-member:not(:last-child) {
         margin-bottom: 0 !important;
+    }
+    
+    /* Force remove any extra spacing between team containers */
+    .team-grid .team-members + .team-members {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    
+    /* Specific fix for the gap between containers */
+    .team-grid > * {
+        margin-bottom: 0 !important;
+    }
+    
+    .team-grid {
+        gap: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     
     /* Fix mobile navigation positioning */
