@@ -676,6 +676,76 @@ h1, h2, h3 {
     overflow-y: auto;
 }
 
+/* TEAM GRID OVERLAP FIXES */
+@media (max-width: 768px) {
+    .team-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        padding: 1rem 0 !important;
+        position: relative !important;
+        z-index: 1 !important;
+    }
+    
+    .team-members {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        margin: 0 !important;
+        padding: 1rem 0 !important;
+        position: relative !important;
+        z-index: 2 !important;
+        width: 100% !important;
+    }
+    
+    .team-member {
+        position: relative !important;
+        z-index: 3 !important;
+        margin: 0 0 1rem 0 !important;
+        padding: 1.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        transform: none !important;
+    }
+    
+    .team-member.president {
+        margin: 0 auto 2rem auto !important;
+        max-width: 100% !important;
+        position: relative !important;
+        z-index: 4 !important;
+    }
+    
+    .team-member:hover {
+        transform: none !important;
+        z-index: 5 !important;
+    }
+    
+    .member-image {
+        margin-bottom: 1rem !important;
+        position: relative !important;
+        z-index: 6 !important;
+    }
+}
+
+/* Additional fixes for very small screens */
+@media (max-width: 480px) {
+    .team-members {
+        padding: 0.5rem !important;
+        gap: 1rem !important;
+    }
+    
+    .team-member {
+        padding: 1rem !important;
+        margin: 0 0 0.5rem 0 !important;
+    }
+}
+
 /* Team Section - Elegant Design */
 .team-section {
     padding: 6rem 2rem;
@@ -789,6 +859,9 @@ h1, h2, h3 {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .team-member {
@@ -802,6 +875,10 @@ h1, h2, h3 {
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
+    z-index: 2;
+    min-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
     
     &::before {
         content: '';
@@ -1670,6 +1747,7 @@ h1, h2, h3 {
     justify-content: center;
     border-radius: 50%;
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
     
     &:hover {
         background: var(--accent);
