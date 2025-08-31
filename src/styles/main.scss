@@ -2453,3 +2453,106 @@ h1, h2, h3 {
         }
     }
 }
+
+/* Theme Points Styling - "What This Means for Participants" */
+.theme-points {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 3rem; /* Add spacing between text and blocks */
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.theme-point {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(59, 130, 246, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.point-icon {
+    font-size: 2rem;
+    min-width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.point-content {
+    flex: 1;
+    
+    h4 {
+        color: var(--primary-light);
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.5;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+}
+
+/* Mobile responsive for theme points */
+@media (max-width: 767px) {
+    .theme-points {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .theme-point {
+        padding: 1.2rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+        .point-icon {
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    .point-content {
+        h4 {
+            font-size: 1.1rem;
+        }
+        
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* Add spacing to theme sections */
+.theme-section {
+    margin-bottom: 4rem;
+    
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+}
