@@ -1505,6 +1505,28 @@
                     }
                 });
                 
+                // Control floating dock visibility based on page
+                const floatingDock = document.getElementById('floatingDock');
+                const floatingDockMobile = document.querySelector('.floating-dock-mobile');
+                
+                if (pageId === 'media' || pageId === 'judges-sponsors') {
+                    // Hide floating dock on media and judges-sponsors pages
+                    if (floatingDock) {
+                        floatingDock.style.display = 'none';
+                    }
+                    if (floatingDockMobile) {
+                        floatingDockMobile.style.display = 'none';
+                    }
+                } else {
+                    // Show floating dock on other pages
+                    if (floatingDock) {
+                        floatingDock.style.display = 'flex';
+                    }
+                    if (floatingDockMobile) {
+                        floatingDockMobile.style.display = 'block';
+                    }
+                }
+                
                 // Close mobile dock if open
                 const dockMenu = document.getElementById('dockMenu');
                 const dockIcon = document.getElementById('dockToggleIcon');
