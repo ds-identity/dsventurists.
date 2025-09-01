@@ -805,149 +805,88 @@
                         </div>
                     </div>
 
-                    <div class="media-gallery">
-                        <!-- Parallax Scroll Section -->
-                        <div style="margin-bottom: 4rem;">
-                            <h2 class="section-subtitle" style="text-align: center; margin-bottom: 3rem;">
-                                Explore Our Journey
-                            </h2>
-                            <div id="parallaxContainer">
-                                <!-- Parallax scroll will be dynamically generated -->
-                            </div>
+                    <!-- Modern Auto-Sliding Gallery -->
+                    <div class="auto-slider-gallery">
+                        <div class="gallery-header">
+                            <h2 class="section-subtitle">Explore Our Journey</h2>
+                            <p class="gallery-description">Moments that define our passion for data science</p>
                         </div>
                         
-                        <!-- Traditional Gallery Grid -->
-                        <div class="gallery-grid">
-                            <div class="gallery-item">
-                                <img src="DSV 2023-275.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                        <div class="scroll-container">
+                            <div class="infinite-scroll" id="gallerySlider">
+                                <!-- First set -->
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-275.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-336.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-336.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-341.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-341.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-359.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-359.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-365.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-365.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-367.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-367.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-369 (1).jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-369.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-369.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-388.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV 2023-388.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV-100.png" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV-100.png" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV-101.png" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV-101.png" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV-102.png" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="DSV-102.png" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="dsv1.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv1.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <!-- Duplicate set for seamless loop -->
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-275.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv2.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-336.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv3.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-341.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv4.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-359.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv5.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-365.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv7.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-367.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv29.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-369.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv39.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV 2023-388.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv49.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV-100.png" alt="DS Venturists Event" loading="lazy">
                                 </div>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="dsv58.jpg" alt="DS Venturists Event" loading="lazy">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-expand"></i>
+                                <div class="gallery-slide">
+                                    <img src="DSV-101.png" alt="DS Venturists Event" loading="lazy">
+                                </div>
+                                <div class="gallery-slide">
+                                    <img src="DSV-102.png" alt="DS Venturists Event" loading="lazy">
+                                </div>
+                                <div class="gallery-slide">
+                                    <img src="dsv1.jpg" alt="DS Venturists Event" loading="lazy">
                                 </div>
                             </div>
                         </div>
