@@ -436,8 +436,8 @@ window.toggleTeamHierarchy = function(team: string): void {
             leader: 'Hardik Kumar',
             leaderImg: 'hardik.png',
             members: [
-                { name: 'Jiya Ghai', role: 'Marketing Team Member', img: 'jiya.png' },
-                { name: 'Shaniah Francisco', role: 'Marketing Team Member', img: 'shanaiah.png' }
+                { name: 'Jiiya Ghai', role: 'Marketing Team Member', img: 'jiya.png' },
+                { name: 'Shanaiah Francisco', role: 'Marketing Team Member', img: 'shanaiah.png' }
             ]
         }
     };
