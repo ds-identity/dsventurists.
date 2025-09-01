@@ -144,16 +144,16 @@ export class TeamManager {
         },
         members: [
           {
-            id: 'jiya',
-            name: 'Jiya Ghai',
+            id: 'jiiya',
+            name: 'Jiiya Ghai', // Corrected spelling
             role: 'Marketing Team Member',
             image: 'https://placehold.co/400x400/0A0F1C/3B82F6?text=',
             isLeader: false,
             team: 'marketing'
           },
           {
-            id: 'shaniah',
-            name: 'Shaniah Francisco',
+            id: 'Shanaiah',
+            name: 'Shanaiah Francisco', // Corrected spelling
             role: 'Marketing Team Member',
             image: 'https://placehold.co/400x400/0A0F1C/3B82F6?text=',
             isLeader: false,
