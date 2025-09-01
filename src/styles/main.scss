@@ -1301,10 +1301,57 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+        background: linear-gradient(45deg, 
+            rgba(59, 130, 246, 0.3), 
+            rgba(147, 197, 253, 0.2), 
+            rgba(59, 130, 246, 0.3));
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: spin 10s linear infinite;
+        z-index: 0;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(circle, 
+            rgba(59, 130, 246, 0.2) 0%, 
+            rgba(147, 197, 253, 0.1) 40%, 
+            transparent 70%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        animation: pulse 3s ease-in-out infinite;
+        z-index: 0;
+    }
     
     @media (max-width: 768px) {
         width: 250px;
         height: 250px;
+        
+        &::before {
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+        }
+        
+        &::after {
+            width: 280px;
+            height: 280px;
+        }
     }
 }
 
@@ -1319,71 +1366,74 @@ h1, h2, h3 {
 }
 
 .hero-logo {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 3px solid rgba(59, 130, 246, 0.3);
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
-    transition: all 0.3s ease;
-    z-index: 2;
-    object-fit: contain;
+    border: none;
+    box-shadow: 
+        0 0 50px rgba(59, 130, 246, 0.8),
+        0 0 100px rgba(59, 130, 246, 0.4),
+        inset 0 0 30px rgba(255, 255, 255, 0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 3;
+    object-fit: cover;
     object-position: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 10px;
+    background: linear-gradient(135deg, 
+        rgba(59, 130, 246, 0.1) 0%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(59, 130, 246, 0.1) 100%);
+    padding: 0;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background: linear-gradient(45deg, 
+            rgba(59, 130, 246, 0.4), 
+            rgba(147, 197, 253, 0.3), 
+            rgba(59, 130, 246, 0.4));
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: -1;
+        animation: spin 8s linear infinite reverse;
+    }
     
     &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
+        transform: scale(1.08) rotate(5deg);
+        box-shadow: 
+            0 0 70px rgba(59, 130, 246, 1),
+            0 0 140px rgba(59, 130, 246, 0.6),
+            inset 0 0 40px rgba(255, 255, 255, 0.3);
+        
+        &::before {
+            opacity: 0.8;
+        }
     }
     
     @media (max-width: 768px) {
-        width: 150px;
-        height: 150px;
-        padding: 8px;
+        width: 160px;
+        height: 160px;
+        
+        &::before {
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+        }
     }
 }
 
 .logo-rings {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    display: none;
 }
 
 .ring {
-    position: absolute;
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    border-radius: 50%;
-    animation: rotate 10s linear infinite;
-    
-    &.ring-1 {
-        width: 250px;
-        height: 250px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation-duration: 15s;
-    }
-    
-    &.ring-2 {
-        width: 280px;
-        height: 280px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation-duration: 20s;
-        animation-direction: reverse;
-    }
-    
-    &.ring-3 {
-        width: 310px;
-        height: 310px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation-duration: 25s;
-        border-color: rgba(147, 197, 253, 0.2);
-    }
+    display: none;
 }
 
 @keyframes pulse-glow {
