@@ -439,6 +439,14 @@ window.toggleTeamHierarchy = function(team: string): void {
                 { name: 'Jiiya Ghai', role: 'Marketing Team Member', img: 'jiya.png' },
                 { name: 'Shanaiah Francisco', role: 'Marketing Team Member', img: 'shanaiah.png' }
             ]
+        },
+        creative: {
+            title: 'Creative Direction Team',
+            leader: 'Zaheera Raj',
+            leaderImg: 'zaheeraraj.jpg',
+            members: [
+                { name: 'Team Members', role: 'Coming Soon...', img: 'zaheeraraj.jpg', comingSoon: true }
+            ]
         }
     };
 
@@ -471,13 +479,21 @@ window.toggleTeamHierarchy = function(team: string): void {
             </div>
             <div class="team-members-grid">
                 ${teamInfo.members.map((member: any) => `
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="${member.img}" alt="${member.name}">
-                        </div>
-                        <h3>${member.name}</h3>
-                        <p class="role">${member.role}</p>
-                        <div class="member-line"></div>
+                    <div class="team-member ${member.comingSoon ? 'coming-soon' : ''}">
+                        ${member.comingSoon ? `
+                            <div class="coming-soon-content">
+                                <i class="fas fa-clock" style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                                <h3>${member.name}</h3>
+                                <p class="role">${member.role}</p>
+                            </div>
+                        ` : `
+                            <div class="member-image">
+                                <img src="${member.img}" alt="${member.name}">
+                            </div>
+                            <h3>${member.name}</h3>
+                            <p class="role">${member.role}</p>
+                            <div class="member-line"></div>
+                        `}
                     </div>
                 `).join('')}
             </div>
