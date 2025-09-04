@@ -1,6 +1,7 @@
 // Import styles
 import './styles/main.scss';
 import { FloatingDock } from './components/FloatingDock';
+import { Chatbot } from './components/Chatbot';
 
 // DS Venturists Main Application
 class DSVenturists {
@@ -15,6 +16,9 @@ class DSVenturists {
         
         // Use the floatingDock instance to set active page
         this.floatingDock.setActivePage('home' as any);
+        
+        // Initialize chatbot
+        new Chatbot();
         
         // Expose instance to window for global access
         (window as any).dsvInstance = this;

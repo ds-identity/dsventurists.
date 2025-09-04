@@ -141,10 +141,10 @@
                     <h1>Competition Categories</h1>
                     <div class="category-item">
                         <div class="category-image">
-                            <img src="Den.jpeg" alt="Dealer's Den">
+                            <img src="Den.jpeg" alt="Angel's Pitch">
                         </div>
                         <div class="category-content">
-                            <h2>Dealer's Den</h2>
+                            <h2>Angel's Pitch</h2>
                             <p>Participants will be presented with three Sustainable Development Goals (SDGs) from which they must select one to address through an innovative business idea. Working in teams of 2-4, they will develop and pitch their business concepts to a panel of judges, demonstrating their entrepreneurial vision, strategic thinking, and potential for making a positive impact.</p>
                             <div class="button-container">
                                 <a href="dealersden.pdf" class="button" target="_blank">Learn More</a>
@@ -1729,6 +1729,56 @@
     <!-- GSAP Animation Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header" onclick="toggleChatbot()">
+            <div class="chatbot-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-title">
+                <h4>DS Venturists Assistant</h4>
+                <p class="chatbot-status">Ask me about the competition!</p>
+            </div>
+            <div class="chatbot-toggle">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm the DS Venturists Assistant. I can help you with information about:</p>
+                        <div class="quick-options">
+                            <button class="quick-option" onclick="sendQuickMessage('What are the competition categories?')">📋 Categories</button>
+                            <button class="quick-option" onclick="sendQuickMessage('How do I register?')">✍️ Registration</button>
+                            <button class="quick-option" onclick="sendQuickMessage('When is the event?')">📅 Event Date</button>
+                            <button class="quick-option" onclick="sendQuickMessage('What is the theme?')">🎯 Theme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <input type="text" id="chatInput" placeholder="Ask me about DS Venturists..." onkeypress="handleChatKeypress(event)">
+                    <button class="send-button" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Floating Button -->
+    <div class="chatbot-floating-btn" id="chatbotFloatingBtn" onclick="toggleChatbot()">
+        <i class="fas fa-comment-dots"></i>
+        <div class="floating-btn-pulse"></div>
+    </div>
     
     <!-- JavaScript will be injected by Webpack -->
 </body>
